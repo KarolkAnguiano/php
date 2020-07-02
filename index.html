@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actividad php</title>
+        <meta charset="utf-8">
+        <style>
+            *{
+                text-align: center;
+            }
+        </style>
+   </head>
+<body>
+  <center>  <section style="background-color:#1F818C; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+		<div>
+		<h1>Actividades php</h1>
+		<h2>Karolk Alfredo Anguiano Godinez EVN-305</h2>
+        <div><p id="fecha"></p></div>
+        
+        <ul style="list-style: none;" >
+            <label>Numeros pares del 1 al 100</label><br>
+            <li><a href="pares.php">Practica 1</a></li><br>
+            <li><a>Practica 2 </a></li>
+            <form method="post" action="sal.php">
+                <h2><b>Categoría y sueldo</b></h2>
+                <label>¿Cuál es tu sueldo?</label><br>
+                 <input type="text" name="s"/><br>
+                 <label>¿Cuál es tu categoría?</label><br>
+                 <select name="categoria" class="form-control">
+                    <option value="a">Categoría 1</option>
+                    <option value="b">Categoría 2</option>
+                    <option value="c">Categoría 3</option>
+                    <option value="d">Categoría 4</option>
+                </select><br><br>
+                <input type="submit" value="Calcular"/>
+                </form>
+            <li><a>Practica 3 </a></li>
+            <form method="get" action="fig.php">
+                <h2><b>Area de una figura</b></h2><br>
+               <label>Ingresa el diametro: </label><br>
+                <input type="text" name="d"/><br>
+                <label>Ingresa una altura: </label><br>
+                <input type="text" name="a"/><br><br>
+               <input type="submit" value="Calcular"/>
+               </form>
+            <li><a>Practica 4 </a></li>
+            <form method="post" action="prom.php">
+                <h2><b>Admisión universidad</b></h2><br>
+               <label>Ingresa tu matrícula: </label><br>
+                <input type="text" name="matricula"/><br>
+                <label>Ingresa tu semestre: </label><br>
+                <input type="text" name="semestre"/><br>
+                <label>Ingresa tu promedio: </label><br>
+                <input type="text" name="promedio"/><br><br>
+               <input type="submit" value="Imprimir"/>
+               </form>
+            <li><a>Practica 5 </a></li>
+            <form method="get" action="terreno.php">
+                <h2><b>Área de un terreno</b></h2><br>
+               <label>Ingrese largo del terreno: </label><br>
+                <input type="text" name="l"/><br>
+                <label>Ingrese ancho del terreno: </label><br>
+                <input type="text" name="a"/><br><br>
+               <input type="submit" value="Calcular"/>
+               
+               </form>
+        </ul>
+        
+        </div>
+        <img src="img/yo.jpg" alt="" style="width: 200px; height: 300px; border-radius: 20px;">
+        
+     
+    
+	</section></center>
+	<script type="text/javascript">
+		var meses=new Array("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre");
+			var dias= new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado");
+			var f= new Date();
+			document.getElementById('fecha').innerHTML="Fecha "+dias[f.getDay()]+", "+f.getDate()+", "+"de "+meses[f.getMonth()]+" del "+f.getFullYear();
+	</script>
+</body>
+</html>
